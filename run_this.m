@@ -3,7 +3,6 @@ clear all; close all; clc; warning off;
 %% TSA analysis
 run('TSA\Model_efast.m');
 run('TSA\plot_TSA.m');
-% % run('TSA/plot_TSA_sep'); % with NaN rows separating the variables
 
 %% Clustering and experiment design
 run('PARSEC\make_designs.m');
