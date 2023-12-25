@@ -1,8 +1,28 @@
+% % % % clear all;
+% % % % close all;
+% % % % clc;
+% % % % warning off;
+% % % % %% GROUND TRUTHS
+% % % % delta       = 0.1;
+% % % % base_prd    = 0.05;
+% % % % beta        = 1;
+% % % % k12         = 2;
+% % % % k23         = 3;
+% % % % k31         = 4;
+% % % % dummy       = 1;
+% % % % 
+% % % % tspan = [0, 72]';
+% % % % prm_log_GT = log10([delta; base_prd; beta; k12; k23; k31; dummy]);
+% % % % ini_cond = zeros(3, 1); ini_cond(1, 1) = 5;
+% % % % 
+% % % % save('../../ground_truth_GRN.mat')
+
+
 %% PARAMETER INITIALIZATION
 % set up max and mix matrices
 
 %% parameter information
-load('../../ground_truth_GRN.mat', 'prm_log_GT', 'ini_cond', 'tspan');
+load('../ground_truth_GRN.mat', 'prm_log_GT', 'ini_cond', 'tspan');
 prm = prm_log_GT;
 
 pmin = prm - log10(1.2);
