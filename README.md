@@ -6,6 +6,8 @@ Problem statement (copied from the article): "We explore the dynamics of a three
 
 We compare the designs using ABC-FAR to identify the most informative ones.
 
+Labels for the designs: SSD, SRD and W1SD denote the PARSEC, random and anti-PARSEC designs respectively.
+
 ground_truth_GRN.mat has details of the parameter values guess and initial conditions used to predict designs.
 
 The folder 'TSA/' has codes for parameter sensitivity analysis.
